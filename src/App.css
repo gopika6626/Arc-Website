@@ -1,0 +1,142 @@
+.launchbutton
+{
+    background-color: #252525;
+    height: 35px;
+    position: relative;
+    width: 267px;
+    color: #fefefe;
+    font-family: "Gilmer Medium-Regular", Helvetica;
+    font-size: 20.1px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-left: 171px;
+    margin-top:440px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.vectorimage
+{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+
+}
+.cnslvector
+{
+    position: absolute;
+    top: 0px;  
+    right: 0px; 
+    z-index: 1000;  /* Ensure it appears on top of other elements */
+    transform: scale(0.8);
+    transform-origin: top;
+
+}
+.rotating-text
+{
+    font-family: "Gilmer Medium-Regular";
+    font-size: 22px;
+    font-weight: 10;
+    position: absolute;
+    top: 47%;
+    right:69%;
+    justify-content:left;
+    
+}
+
+.maskvector
+{
+    
+    position:absolute;
+    right:20%;
+    transform: translateY(90%);
+    
+    
+}
+.mask1
+{
+    position:absolute;
+    transform:translateX(-50%);
+    top:20%;
+    
+}
+.heading
+{
+    position:absolute;
+    top:2%;
+    color: #252525;
+    font-family: "Gilmer Medium-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left:5%;
+}
+
+.vectors
+{
+    position:absolute;
+    top:4%;
+    right:30%;
+    opacity: 50%;
+}
+.constant-text
+{
+    position: absolute;
+    font-family: "Gilmer Medium-Regular";
+    font-size: 22px;
+    font-weight: 10;
+    position: absolute;
+    top: 50%;
+    right:78%;
+    text-align: left;
+
+
+}
+.container
+{ 
+    background-color: #fefefe;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.play-word {
+    display: flex;
+  align-items: baseline;
+  margin-top: 60%;
+  margin-left:-40%;
+  
+    
+  }
+  
+  .reality-word {
+    
+
+    display: flex;
+    align-items: baseline;
+    margin-top: 38%;
+    margin-left:-0.95%;
+    
+  }
+
+  
+  .gaming-word {
+    display: flex;
+    align-items: baseline;
+    margin-top: 34%;
+    margin-left:15%;
+    
+  }
+
+  .launched body,
+.launched .container {
+  background-color: #252525; 
+  color: #fefefe; 
+  
+}
+
+  .launched h1, .launched .constant-text, .launched .rotating-text {
+    color: #fefefe; 
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
