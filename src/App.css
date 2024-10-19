@@ -14,6 +14,70 @@
     margin-top:440px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+.launch-container
+{
+    height:273.5px;
+    width: 51.5px;
+    position: absolute;
+    top: 440px;
+    left:168px;
+}
+.constant-text{
+    height: 94px;
+    width: 338px;
+    left:171px;
+    top:375px;
+
+
+}
+.rotating-element-container
+{
+    position:absolute;
+    left: 520px;
+    top: 350px;
+    overflow: hidden;
+}
+.launched{
+    background-color: #252525;
+    color: #fefefe;
+}
+.introvector
+{
+    position:absolute;
+    top:310px;
+    left:1095px;
+}
+.arc
+{
+    position:absolute;
+    top:360px;
+    left:1035px;
+}
+.thirdvector
+{
+    position: absolute;
+    top:550px;
+    left:133px;
+}
+
+.container.second-launch .constant-text,
+.container.second-launch .rotating-text,
+.container.second-launch .launch-container,
+.container.second-launch .cnslvector,
+.container.second-launch .maskvector,
+.container.second-launch .maskvector1{
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+.container.second-launch .arc,
+.container.second-launch .intro,
+.container.secong-launch .vectors{
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .vectorimage
 {
     position: absolute;
@@ -24,6 +88,7 @@
 }
 .cnslvector
 {
+    
     position: absolute;
     top: 0px;  
     right: 0px; 
@@ -32,24 +97,40 @@
     transform-origin: top;
 
 }
+.vectorimages
+{
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   transform-origin: top;
+   transform: scale(0.9);
+   
+}
+.masked
+{
+    position: absolute;
+    top:20%;
+    transform: translateX(-10%)
+}
 .rotating-text
 {
-    font-family: "Gilmer Medium-Regular";
-    font-size: 22px;
-    font-weight: 10;
+   
     position: absolute;
-    top: 47%;
-    right:69%;
-    justify-content:left;
+    top: 48%;
+    right:45%;
+    display: flex;
+    transition: transform 0.6s ease-out;
+    
     
 }
 
 .maskvector
 {
-    
     position:absolute;
-    right:20%;
-    transform: translateY(90%);
+    top:75%;
+    right:10%;
+    
+    
     
     
 }
@@ -59,6 +140,67 @@
     transform:translateX(-50%);
     top:20%;
     
+}
+.sideel
+{
+    position: absolute;
+    top: 330px;
+    left:1200px;
+}
+.first-launch-vector
+{
+    position: absolute;
+    top:5%;
+    left:80%;
+}
+.disappearing-vector
+{
+    position: absolute;
+    top:50%;
+    left:80%;
+}
+.sideupper
+{
+    position: absolute;
+    top: 155px;
+    left:1230px;
+}
+.sideup
+{
+    position: absolute;
+    top: 75px;
+    left:700px;
+
+}
+.sidelow
+{
+    position: absolute;
+    top: 270px;
+    left:720px;
+}
+.lsidelower
+{
+    position: absolute;
+    top: 530px;
+    left:1230px;
+}
+.masksidelow
+{
+    position: absolute;
+    top: 88%;
+    left:79.5%;
+}
+.masksideup
+{
+    position: absolute;
+    top:74%;
+    left:69%;
+}
+.lmask{
+    position: absolute;
+    top:19.5%;
+    left:3.5%;
+
 }
 .heading
 {
@@ -70,13 +212,31 @@
     font-weight: 400;
     left:5%;
 }
-
+.dotvector
+{
+    position:absolute;
+    top:100px;
+    left:1269px;
+}
+.cornervector
+{
+    position:absolute;
+    top:680px;
+    left:1316px;
+}
 .vectors
 {
     position:absolute;
     top:4%;
-    right:30%;
-    opacity: 50%;
+    left:3.5%;
+    opacity: 90%;
+}
+.vectors1c
+{
+    position: absolute;
+    
+    
+    transform-origin:center;
 }
 .constant-text
 {
@@ -132,6 +292,9 @@
   
 }
 
+
+
+
   .launched h1, .launched .constant-text, .launched .rotating-text {
     color: #fefefe; 
   }
@@ -139,4 +302,118 @@
   html, body {
     height: 100%;
   }
+  .play-word.animate {
+    animation: fadeSlideUp 3s ease-out forwards;
+  }
   
+  .reality-word.animate {
+    animation: fadeSlideDown 3s ease-out forwards;
+  }
+  
+  .gaming-word.animate {
+    animation: fadeSlideUp 3s ease-out forwards;
+  }
+  
+  /* Keyframes for sliding up and down with ease-out effect */
+  @keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeSlideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+
+
+  
+  /* Media query for screens smaller than 768px (tablets, phones) */
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .button, .element {
+      width: 80%; /* Resize buttons */
+    }
+  
+    /* Resize images */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .sideel, .sidem, .sideup, .sidelow, .lsidelower, .masksidelow, .masksideup, .lmask, .cross {
+      width: 100%;
+      text-align: center; /* Center align elements */
+    }
+  
+    /* Scale down the rotating text and vectors for mobile */
+    .rotating-text img {
+      max-width: 70%;
+      height: auto;
+    }
+  
+    /* Scale vectors for mobile */
+    .vectors img {
+      max-width: 90%;
+      height: auto;
+    }
+  
+    /* Adjust font size */
+    .playword, .realityword, .gamingword {
+      font-size: 14px;
+    }
+  
+    /* Hide elements for better mobile experience, if needed */
+    .maskvector, .maskvector1, .sideel {
+      display: none; /* Adjust if you want to hide these on mobile */
+    }
+  }
+  
+  /* Media query for very small screens (phones < 480px) */
+  @media only screen and (max-width: 480px) {
+    .container {
+      padding: 5px;
+    }
+  
+    /* Resize images further */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .rotating-text img, .vectors img {
+      max-width: 60%;
+      height: auto;
+    }
+  
+    /* Adjust margins/paddings */
+    .playword, .realityword, .gamingword {
+      font-size: 12px;
+    }
+  
+    .launch-container {
+      padding: 5px;
+    }
+  
+    /* Stacking elements vertically */
+    .sideel, .sidem, .sideup, .sidelow {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }

@@ -1,5 +1,4 @@
 import React from 'react';
-import Vector from '../Vector1.png';
 
 const Button = ({ onClick }) => {
   return (
