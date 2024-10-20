@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'
+import './Swipe'
 import Cns from './assets/cnslcomponent.png';
 import Mask from './assets/Mask group1.png'
 import Masks from './assets/Mask group left top.png'
@@ -34,6 +35,8 @@ import Mvector from './Group 2 (1).png'
 import Uvector from './Group 3 (1).png'
 import Dot from './dot.png'
 import Cornervect from'./Group 48095299.png'
+
+
 
 
 
