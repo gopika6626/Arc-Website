@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css'
-import './Swipe'
 import Cns from './assets/cnslcomponent.png';
 import Mask from './assets/Mask group1.png'
 import Masks from './assets/Mask group left top.png'
@@ -37,6 +36,12 @@ import Dot from './dot.png'
 import Cornervect from'./Group 48095299.png'
 
 
+import { useMediaQuery } from 'react-responsive';
+
+import MediaQuery from 'react-responsive'
+
+
+
 
 
 
@@ -69,6 +74,7 @@ const App = () => {
     return () => clearInterval(intervalId);
    }
  }, [preElements.length,isLaunched]);
+
 
 
 useEffect(() => {
@@ -187,7 +193,7 @@ key={currentPreElementsIndex}>
         {!isLaunched?(
           <img src = {Cns} alt="Cnsl" className="side-cnsl"/>
 
-        ):(<img src={Cnsl} alt="New Vector" className="vectorimages" />)}
+        ):(<img src={Cnsl} alt="New Vector" style={{ width: '100%', height: '100%', objectFit: 'cover' }}className="vectorimages" />)}
       
       </div>
       
