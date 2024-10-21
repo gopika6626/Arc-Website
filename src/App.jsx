@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import './App.css';
 import './App.css'
 import Cns from './assets/cnslcomponent.png';
 import Mask from './assets/Mask group1.png'
 import Masks from './assets/Mask group left top.png'
 //import Vectors from './assets/Vector2.png'
-import Cnsl from './cnsl12.png'
+import Cnsl from './assets/cnsl12.png'
 import Vector from './Component 8.png';
 import Element from './Component 7.png';
 import Text from './Redefine.png'
@@ -35,10 +37,6 @@ import Uvector from './Group 3 (1).png'
 import Dot from './dot.png'
 import Cornervect from'./Group 48095299.png'
 
-
-import { useMediaQuery } from 'react-responsive';
-
-import MediaQuery from 'react-responsive'
 
 
 
@@ -193,7 +191,7 @@ key={currentPreElementsIndex}>
         {!isLaunched?(
           <img src = {Cns} alt="Cnsl" className="side-cnsl"/>
 
-        ):(<img src={Cnsl} alt="New Vector" style={{ width: '100%', height: '100%', objectFit: 'cover' }}className="vectorimages" />)}
+        ):(<img src={Cnsl} alt="New Vector" className="side-cnsl"/>)}
       
       </div>
       

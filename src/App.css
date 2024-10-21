@@ -20,9 +20,9 @@
 {
     height:273.5px;
     width: 51.5px;
-    position: absolute;
-    top: 60%;
-    left: 11%;
+    position:absolute;
+    top:60%;
+    left:11%;
 }
 .constant-text{
     height: 94px;
@@ -35,8 +35,8 @@
 .rotating-element-container
 {
     position:absolute;
-    left: 520px;
-    top: 350px;
+    left: 27.08vw;
+    top: 32.41vh; 
     overflow: hidden;
 }
 .launched{
@@ -95,14 +95,9 @@
     top: 0px;  
     right: 0px; 
     z-index: 1000;  /* Ensure it appears on top of other elements */
-    max-height: 80%;
-    max-width: 40%;
-    transform: scaleX(0.9);
     transform: scale(0.94);
     transform-origin:top;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
+    
    
 }
 .vectorimages
@@ -195,8 +190,8 @@
 .masksidelow
 {
     position: absolute;
-    top: 88%;
-    left:79.5%;
+    top: 65%;
+    left:80%;
 }
 .masksideup
 {
@@ -229,8 +224,8 @@
 .cornervector
 {
     position:absolute;
-    top:680px;
-    left:1316px;
+    top:100%;
+    left:90%;
 }
 .vectors
 {
@@ -261,8 +256,7 @@
 }
 .container
 { 
-    display:flex;
-    flex-direction: column;
+    
     background-color: #fefefe;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -290,7 +284,7 @@
   .gaming-word {
     display: flex;
     align-items: baseline;
-    margin-top: 34%;
+    margin-top:34%;
     margin-left:15%;
     
   }
@@ -346,6 +340,93 @@
       transform: translateY(0);
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .rotating-text img {
+
+      margin-top:35%;
+      margin-left:65%;
+      width:60%;
+    }
+  
+    .launch-container img {
+      width:450%;
+      position:absolute;
+      top:5%;
+      left:-70%;
+
+      /* Make button smaller on mobile */
+    }
+  
+    .sideel img, .sidem img, .sideup img, .sidelow img {
+      width: 50px; /* Scale down side elements */
+    }
+  
+    /* Adjust text and image sizes */
+    .constant-text img {
+      width:40%;
+      margin-top:20%;
+      margin-left:-50%;
+     
+    }
+  
+    .cross img {
+      width: 80%;
+      margin: 10px 0;
+    }
+  
+    .vectors img {
+      width: 90%;
+    }
+  
+    /* Responsive masks and vectors */
+    .maskvector img, .maskvector1 img {
+      width: 70%;
+    }
+  
+    /* Adjust vector container for small screens */
+    .cnslvector img {
+      width:100%;
+      transform-origin:top;
+      margin-top:10%;
+      margin-left:45%;
+    
+  }
+}
+  
+  /* Media Queries for Tablets */
+  @media (min-width: 768px) and (max-width: 1400px) {
+    .container {
+      padding: 40px;
+    }
+    .constant-text img{
+        width:92%;
+        position: absolute;
+        top:34%;
+        left:-45%
+    }
+    
+  
+    .rotating-text img {
+      width: 200%;
+      position: absolute;
+      top: 52%;
+      left: 40%;
+    }
+  
+    .launch-container img {
+      width: 350px;
+    }
+  
+    .cross img, .maskvector img, .maskvector1 img {
+      width: 80%;
+    }
+  }
 
 
 
