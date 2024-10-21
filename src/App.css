@@ -349,16 +349,16 @@
   
     .rotating-text img {
 
-      margin-top:35%;
-      margin-left:65%;
-      width:60%;
+      margin-top:29%;
+      margin-left:60%;
+      width:55%;
     }
   
     .launch-container img {
       width:450%;
       position:absolute;
       top:5%;
-      left:-70%;
+      left:-85%;
 
       /* Make button smaller on mobile */
     }
@@ -369,8 +369,8 @@
   
     /* Adjust text and image sizes */
     .constant-text img {
-      width:40%;
-      margin-top:20%;
+      width:38%;
+      margin-top:15%;
       margin-left:-50%;
      
     }
@@ -393,9 +393,9 @@
     .cnslvector img {
       width:100%;
       transform-origin:top;
-      margin-top:10%;
+      margin-top:20%;
       margin-left:45%;
-    
+      
   }
 }
   
