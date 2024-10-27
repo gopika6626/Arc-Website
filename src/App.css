@@ -168,33 +168,33 @@
 .sideupper
 {
     position: absolute;
-    top: 155px;
-    left:1230px;
+    top: 20%;
+    left:80%;
 }
 .sideup
 {
     position: absolute;
-    top: 75px;
+    top: 20%;
     left:700px;
 
 }
 .sidelow
 {
     position: absolute;
-    top: 270px;
-    left:720px;
+    top: 72%;
+    left:93%;
 }
 .lsidelower
 {
     position: absolute;
-    top: 530px;
-    left:1230px;
+    top: 70%;
+    left:80%;
 }
 .masksidelow
 {
     position: absolute;
-    top: 65%;
-    left:80%;
+    top: 88%;
+    left:79%;
 }
 .masksideup
 {
