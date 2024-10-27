@@ -80,6 +80,9 @@
   transition: opacity 0.5s ease-in-out;
 }
 
+
+
+
 .vectorimage
 {
     position: absolute;
@@ -408,7 +411,7 @@
         width:92%;
         position: absolute;
         top:34%;
-        left:-45%
+        left:-45%;
     }
     
   

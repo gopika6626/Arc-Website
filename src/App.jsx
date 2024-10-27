@@ -47,6 +47,10 @@ const App = () => {
   const [isLaunched, setIsLaunched] = useState(false);
   const [secondLaunch, setSecondLaunch] = useState(false); 
   const [isAnimating, setIsAnimating] = useState(false);
+  const [thirdLaunch, setThirdLaunch] = useState(false);
+
+
+
 
   const postElements = [
     <img src = {Plays} alt = "plays" className = "playword"/>,
@@ -94,12 +98,19 @@ const handleLaunchClick = () => {
 }
   else if (isLaunched && !secondLaunch) {
   setSecondLaunch(true); 
+  }
+  else if(isLaunched && secondLaunch && !thirdLaunch)
+   
+  {
+    setThirdLaunch(true);
+  }
 };
-}
+
+
 
 
   return (
-    <div className={`container ${isLaunched ? 'launched' : ''} ${secondLaunch ? 'second-launch' : ''}`}> 
+    <div className={`container ${isLaunched ? 'launched' : ''} ${secondLaunch ? 'second-launch' : ''}${thirdLaunch ? 'third-launch' : ''}`}> 
       <div className='constant-text'>
       {!isLaunched?(
         
@@ -227,13 +238,14 @@ key={currentPreElementsIndex}>
         </div>
     )}
     {secondLaunch && (
-      <div className="cvect">
-        <img  src={Cvect} alt = "third" className = "thirdvector"/>
-        
-        </div>
-    )}
-
+    <div className="cvect">
+        <img src={Cvect} alt="third" className="thirdvector" />
+      </div>
+      )}
     </div>
+    
+
+    
     
 
   );
